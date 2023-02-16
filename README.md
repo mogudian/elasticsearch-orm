@@ -1,6 +1,6 @@
 # elasticsearch-orm
 
-为 `Elasticsearch` 提供了 `ORM` 支持，像使用数据库那样使用ES，提升开发效率
+为 `Elasticsearch` 提供了 `ORM` 支持，像使用数据库那样使用 ES ，提升开发效率
 
 ## 使用说明
 
@@ -23,7 +23,7 @@ elasticsearch.datasource.password=YOUR_PASSWORD
 elasticsearch.orm.basePackage=entity所在的包
 ```
 
-- 3、编写自己的实体，相当于DO，一个实体对应一个索引
+- 3、编写自己的实体，相当于 DO ，一个实体对应一个索引
 
 ```java
 @Index("user")
@@ -66,7 +66,8 @@ static class UserEntity implements BaseEntity {
 }
 ```
 
-- 4、在ES中创建entity对应的索引，必须按下面格式（ES6出的动态模板），注意如果使用了注解比如@SearchField，则不需要在property中指定，会自动生成字段
+- 4、在 ES 中创建 entity 对应的索引，必须按下面格式（ES6出的动态模板），只修改 properties<br>
+     注意如果使用了注解比如 @SearchField ，则不需要在 properties 中指定，会自动生成字段
 
 PUT /user
 ```json
@@ -162,6 +163,7 @@ public class SyncUserService {
 // 简单方式
 // 优点 使用简单
 // 缺点 只能 a and b and c 只能进行等值查询(= 和 in) 并且需要在字符串中写字段名(不好refactor) 不支持嵌套 不支持模糊搜索
+
 SimpleSearchRequest searchRequest = new SimpleSearchRequest(UserEntity.class);
 searchRequest.setKeyword(keyword);
 if (time1 != null || time2 != null) {
@@ -176,6 +178,7 @@ SearchResult<UserEntity> searchResult = client.search(searchRequest);
 // 复杂方式
 // 优点 可以进行非等值的查询(> < between like) 可以做复杂条件例如 a and b and (c or (d and e)) 支持嵌套查询 支持模糊搜索
 // 缺点 需要在字符串中写字段名(不好refactor)
+
 ComplexSearchRequest searchRequest = new ComplexSearchRequest(UserEntity.class);
 searchRequest.setKeyword(keyword);
 if (time1 != null || time2 != null) {
@@ -237,6 +240,7 @@ SearchResult<UserEntity> searchResult = client.search(searchRequest);
 // SQL方式
 // 优点 可以进行ES支持的任意查询 学习成本低 即使不了解ES也能使用 支持模糊搜索
 // 缺点 不支持转义字符 执行效率相对低(要parse and explain) 对于null处理不好(语义不明确) 对于日期类型处理不好(只能按固定格式)
+
 String sql = "where (nick like ? or description like ?) and receivedTime between ? and ? order by receivedTime desc";
 SqlSearchRequest searchRequest = new SqlSearchRequest(UserEntity.class, sql);
 searchRequest.setParameters(keyword, keyword, time1 != null ? time1.getTime() : null, time2 != null ? time2.getTime() : null);
@@ -245,7 +249,7 @@ SearchResult<UserEntity> searchResult = client.search(searchRequest);
 ```
 
 ## 参考
-SQL部分的实现参考（抄袭）了 [NLPchina/elasticsearch-sql](https://github.com/NLPchina/elasticsearch-sql)
+- SQL部分的实现参考（抄袭）了 [NLPchina/elasticsearch-sql](https://github.com/NLPchina/elasticsearch-sql)
 
 ## 依赖三方库
 
