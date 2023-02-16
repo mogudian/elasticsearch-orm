@@ -37,7 +37,7 @@ public class ElasticsearchOrmProperties extends ElasticsearchProperties {
     /**
      * 启用清理任务
      */
-    private boolean enableCleanScheduler = true;
+    private boolean enableCleanScheduler = false;
 
     /**
      * 清理是否需要加锁

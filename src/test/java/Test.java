@@ -129,13 +129,10 @@ public class Test {
         // 优点 使用类和注解做参数 使用方便 并且在类中refactor非常容易 支持模糊搜索
         // 缺点 只能 a and b and c 只能进行等值查询(= 和 in) 需要写查询类相对麻烦 不支持嵌套查询
         {
-            // region mock
             UserSearchDTO userSearchDTO = new UserSearchDTO();
             userSearchDTO.setStart(time1 != null ? time1.getTime() : null);
             userSearchDTO.setEnd(time2 != null ? time2.getTime() : null);
             userSearchDTO.setUserId(userId);
-            // endregion
-
             AnnotatedSearchRequest searchRequest = new AnnotatedSearchRequest(UserEntity.class, userSearchDTO);
             searchRequest.setKeyword(keyword);
         }
@@ -144,10 +141,9 @@ public class Test {
         // 优点 可以进行ES支持的任意查询 学习成本低 即使不了解ES也能使用 支持模糊搜索
         // 缺点 不支持转义字符 执行效率相对低(要parse and explain) 对于null处理不好(语义不明确) 对于日期类型处理不好(只能按固定格式)
         {
-            // String sql = "where (nick like ? or description like ?) and receivedTime between ? and ? order by receivedTime desc";
-            String sql = "where receivedTime between ? and ? order by receivedTime desc";
+            String sql = "where (nick like ? or description like ?) and receivedTime between ? and ? order by receivedTime desc";
             SqlSearchRequest searchRequest = new SqlSearchRequest(UserEntity.class, sql);
-            searchRequest.setParameters(time1 != null ? time1.getTime() : null, time2 != null ? time2.getTime() : null);
+            searchRequest.setParameters(keyword, keyword, time1 != null ? time1.getTime() : null, time2 != null ? time2.getTime() : null);
         }
 
         // 下面是调用
