@@ -5,7 +5,9 @@ import java.util.concurrent.TimeUnit;
 
 /**
  * 需要控制生命周期的字段
- * @author sunbo
+ *
+ * @author Joshua Sun
+ * @since 1.0.0
  */
 @Target({ElementType.FIELD})
 @Retention(RetentionPolicy.RUNTIME)

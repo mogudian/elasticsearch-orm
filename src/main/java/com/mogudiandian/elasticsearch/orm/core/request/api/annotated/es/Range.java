@@ -8,7 +8,8 @@ import java.lang.annotation.Target;
 /**
  * ES的range
  *
- * @author sunbo
+ * @author Joshua Sun
+ * @since 1.0.0
  */
 @Target({ElementType.FIELD})
 @Retention(RetentionPolicy.RUNTIME)

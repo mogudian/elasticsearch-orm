@@ -18,7 +18,9 @@ import java.util.stream.Collectors;
 
 /**
  * ES实体工具
- * @author sunbo
+ *
+ * @author Joshua Sun
+ * @since 1.0.0
  */
 @Slf4j
 public final class OrmUtils {

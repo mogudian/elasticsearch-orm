@@ -13,7 +13,9 @@ import java.util.concurrent.TimeUnit;
 
 /**
  * 生命周期的工具类
- * @author sunbo
+ *
+ * @author Joshua Sun
+ * @since 1.0.0
  */
 public final class LifecycleUtils {
 

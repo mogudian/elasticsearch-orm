@@ -18,7 +18,8 @@ import java.util.Date;
  * where a = b limit ?, ?
  * where a = b and c = ? order by x asc, y desc limit x, y
  *
- * @author sunbo
+ * @author Joshua Sun
+ * @since 1.0.0
  */
 @Getter
 @Setter

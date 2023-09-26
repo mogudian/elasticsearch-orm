@@ -23,7 +23,9 @@ import javax.annotation.PostConstruct;
 
 /**
  * ES-ORM配置启动类
- * @author sunbo
+ *
+ * @author Joshua Sun
+ * @since 1.0.0
  */
 @Configuration
 @EnableConfigurationProperties(ElasticsearchOrmProperties.class)

@@ -6,7 +6,9 @@ import org.springframework.context.annotation.Configuration;
 
 /**
  * ES数据源启动类
- * @author sunbo
+ *
+ * @author Joshua Sun
+ * @since 1.0.0
  */
 @Configuration
 @EnableConfigurationProperties(ElasticsearchProperties.class)

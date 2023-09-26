@@ -7,7 +7,9 @@ import org.springframework.boot.context.properties.ConfigurationProperties;
 
 /**
  * 任务搜索的配置集合
- * @author sunbo
+ *
+ * @author Joshua Sun
+ * @since 1.0.0
  */
 @ConfigurationProperties(prefix = "elasticsearch.orm")
 @Getter

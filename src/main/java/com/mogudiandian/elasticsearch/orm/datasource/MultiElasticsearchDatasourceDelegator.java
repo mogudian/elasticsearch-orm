@@ -6,7 +6,9 @@ import java.util.Map;
 
 /**
  * ES多数据源委托者
- * @author sunbo
+ *
+ * @author Joshua Sun
+ * @since 1.0.0
  */
 public class MultiElasticsearchDatasourceDelegator<K extends Serializable> implements ElasticsearchDatasourceDelegator {
 

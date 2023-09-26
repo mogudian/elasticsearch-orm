@@ -4,7 +4,9 @@ import lombok.Setter;
 
 /**
  * 分页条件
- * @author sunbo
+ *
+ * @author Joshua Sun
+ * @since 1.0.0
  */
 @Setter
 public class PaginationConfig {

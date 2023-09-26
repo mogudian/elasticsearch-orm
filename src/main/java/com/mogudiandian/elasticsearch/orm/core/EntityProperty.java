@@ -10,7 +10,9 @@ import java.util.Collection;
 
 /**
  * 实体的属性
- * @author sunbo
+ *
+ * @author Joshua Sun
+ * @since 1.0.0
  */
 public class EntityProperty extends ObjectProperty {
 

@@ -31,7 +31,9 @@ import java.util.stream.Collectors;
 
 /**
  * 任务搜索client默认实现
- * @author sunbo
+ *
+ * @author Joshua Sun
+ * @since 1.0.0
  */
 @Slf4j
 @Getter

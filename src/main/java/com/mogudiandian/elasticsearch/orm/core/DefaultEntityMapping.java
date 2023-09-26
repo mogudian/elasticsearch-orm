@@ -11,7 +11,9 @@ import java.util.stream.Collectors;
 /**
  * 默认的ES实体映射
  * @param <E> 实体类型
- * @author sunbo
+ *
+ * @author Joshua Sun
+ * @since 1.0.0
  */
 public class DefaultEntityMapping<E extends BaseEntity> extends EntityMapping<E> {
 

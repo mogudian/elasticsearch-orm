@@ -5,7 +5,9 @@ import lombok.Setter;
 
 /**
  * 排序条件
- * @author sunbo
+ *
+ * @author Joshua Sun
+ * @since 1.0.0
  */
 @Getter
 @Setter

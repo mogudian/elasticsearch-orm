@@ -9,7 +9,9 @@ import java.util.Map;
 
 /**
  * Entity映射查找器
- * @author sunbo
+ *
+ * @author Joshua Sun
+ * @since 1.0.0
  */
 @Slf4j
 public final class EntityMappingFinder {

@@ -16,7 +16,9 @@ import java.time.Duration;
 
 /**
  * 默认的ES-rest-client定制器
- * @author sunbo
+ *
+ * @author Joshua Sun
+ * @since 1.0.0
  */
 public class DefaultRestClientBuilderCustomizer implements RestClientBuilderCustomizer {
 

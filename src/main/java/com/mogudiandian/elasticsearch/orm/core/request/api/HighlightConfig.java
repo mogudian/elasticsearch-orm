@@ -6,7 +6,9 @@ import java.util.Optional;
 
 /**
  * 高亮的配置
- * @author sunbo
+ *
+ * @author Joshua Sun
+ * @since 1.0.0
  */
 @Setter
 public class HighlightConfig {

@@ -28,8 +28,10 @@ import java.util.List;
 
 /**
  * 默认的实体数据清理器
- * 使用delete_by_query + force_merge
- * @author sunbo
+ * 使用 delete_by_query + force_merge
+ *
+ * @author Joshua Sun
+ * @since 1.0.0
  */
 @Slf4j
 @Component

@@ -3,7 +3,8 @@ package com.mogudiandian.elasticsearch.orm.schedule;
 /**
  * 实体清理的定时任务依赖的锁
  *
- * @author sunbo
+ * @author Joshua Sun
+ * @since 1.0.0
  */
 public interface EntityCleanLocker {
 

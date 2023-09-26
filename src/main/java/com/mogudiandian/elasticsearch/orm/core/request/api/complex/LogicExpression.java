@@ -12,7 +12,9 @@ import java.util.stream.Collectors;
 
 /**
  * 逻辑表达式
- * @author sunbo
+ *
+ * @author Joshua Sun
+ * @since 1.0.0
  */
 @Getter
 public final class LogicExpression extends Expression {

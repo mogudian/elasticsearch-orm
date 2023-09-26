@@ -11,7 +11,9 @@ import org.springframework.stereotype.Component;
 
 /**
  * 实体清理的定时任务
- * @author sunbo
+ *
+ * @author Joshua Sun
+ * @since 1.0.0
  */
 @Slf4j
 @Component

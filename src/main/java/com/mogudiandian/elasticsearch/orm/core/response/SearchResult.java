@@ -11,6 +11,9 @@ import java.util.List;
 /**
  * ES搜索结果
  * @param <E> 实体类型
+ *
+ * @author Joshua Sun
+ * @since 1.0.0
  */
 @Getter
 @Setter

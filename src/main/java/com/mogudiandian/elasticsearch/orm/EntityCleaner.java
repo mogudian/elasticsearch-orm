@@ -4,7 +4,9 @@ import com.mogudiandian.elasticsearch.orm.core.BaseEntity;
 
 /**
  * 实体数据清理器
- * @author sunbo
+ *
+ * @author Joshua Sun
+ * @since 1.0.0
  */
 public interface EntityCleaner {
 

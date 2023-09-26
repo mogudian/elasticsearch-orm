@@ -11,7 +11,9 @@ import org.elasticsearch.search.builder.SearchSourceBuilder;
 
 /**
  * 搜索请求条件
- * @author sunbo
+ *
+ * @author Joshua Sun
+ * @since 1.0.0
  */
 public abstract class SearchRequest {
 

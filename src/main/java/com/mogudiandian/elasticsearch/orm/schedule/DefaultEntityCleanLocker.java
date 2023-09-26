@@ -24,7 +24,8 @@ import java.util.UUID;
  * 实体清理的定时任务依赖的锁默认实现
  * 使用ES实现的分布式锁
  *
- * @author sunbo
+ * @author Joshua Sun
+ * @since 1.0.0
  */
 @Slf4j
 @Setter

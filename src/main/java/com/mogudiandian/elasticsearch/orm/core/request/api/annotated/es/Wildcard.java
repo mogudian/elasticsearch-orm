@@ -7,7 +7,9 @@ import java.lang.annotation.Target;
 
 /**
  * ES的wildcard
- * @author sunbo
+ *
+ * @author Joshua Sun
+ * @since 1.0.0
  */
 @Target({ElementType.FIELD})
 @Retention(RetentionPolicy.RUNTIME)

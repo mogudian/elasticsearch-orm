@@ -6,7 +6,9 @@ import org.elasticsearch.index.query.QueryBuilder;
 
 /**
  * 表达式
- * @author sunbo
+ *
+ * @author Joshua Sun
+ * @since 1.0.0
  */
 public abstract class Expression {
 

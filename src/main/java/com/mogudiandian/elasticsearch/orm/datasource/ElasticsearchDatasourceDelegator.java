@@ -2,7 +2,9 @@ package com.mogudiandian.elasticsearch.orm.datasource;
 
 /**
  * ES数据源委托者
- * @author sunbo
+ *
+ * @author Joshua Sun
+ * @since 1.0.0
  */
 public interface ElasticsearchDatasourceDelegator {
 

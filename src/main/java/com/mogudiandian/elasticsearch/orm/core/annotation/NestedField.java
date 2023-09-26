@@ -4,7 +4,9 @@ import java.lang.annotation.*;
 
 /**
  * 需要嵌套的字段
- * @author sunbo
+ *
+ * @author Joshua Sun
+ * @since 1.0.0
  */
 @Target({ElementType.FIELD})
 @Retention(RetentionPolicy.RUNTIME)

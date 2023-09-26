@@ -22,7 +22,9 @@ import java.util.concurrent.ConcurrentHashMap;
 
 /**
  * 复杂搜索条件
- * @author sunbo
+ *
+ * @author Joshua Sun
+ * @since 1.0.0
  */
 @Slf4j
 public class AnnotatedSearchRequest extends ApiSearchRequest {

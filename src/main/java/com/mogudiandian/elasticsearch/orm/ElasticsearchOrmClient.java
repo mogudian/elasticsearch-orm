@@ -9,7 +9,9 @@ import java.util.Map;
 
 /**
  * 任务搜索client
- * @author sunbo
+ *
+ * @author Joshua Sun
+ * @since 1.0.0
  */
 public interface ElasticsearchOrmClient {
 

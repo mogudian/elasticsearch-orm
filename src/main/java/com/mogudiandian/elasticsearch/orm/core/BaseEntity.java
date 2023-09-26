@@ -2,7 +2,9 @@ package com.mogudiandian.elasticsearch.orm.core;
 
 /**
  * ES基础实体
- * @author sunbo
+ *
+ * @author Joshua Sun
+ * @since 1.0.0
  */
 public interface BaseEntity {
 

@@ -17,7 +17,9 @@ import java.util.stream.Stream;
 
 /**
  * 条件表达式
- * @author sunbo
+ *
+ * @author Joshua Sun
+ * @since 1.0.0
  */
 public final class ConditionExpression extends Expression {
 

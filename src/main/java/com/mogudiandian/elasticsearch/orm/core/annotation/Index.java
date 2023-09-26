@@ -4,7 +4,9 @@ import java.lang.annotation.*;
 
 /**
  * 用来指定实体对应的索引名称
- * @author sunbo
+ *
+ * @author Joshua Sun
+ * @since 1.0.0
  */
 @Target({ElementType.TYPE})
 @Retention(RetentionPolicy.RUNTIME)

@@ -29,7 +29,8 @@ import org.elasticsearch.search.sort.SortOrder;
 /**
  * 搜索条件
  *
- * @author sunbo
+ * @author Joshua Sun
+ * @since 1.0.0
  */
 public class SqlSearchRequest extends SearchRequest {
 

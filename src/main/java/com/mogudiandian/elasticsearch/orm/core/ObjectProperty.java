@@ -8,7 +8,9 @@ import java.lang.reflect.Method;
 
 /**
  * 对象的属性
- * @author sunbo
+ *
+ * @author Joshua Sun
+ * @since 1.0.0
  */
 public class ObjectProperty {
 

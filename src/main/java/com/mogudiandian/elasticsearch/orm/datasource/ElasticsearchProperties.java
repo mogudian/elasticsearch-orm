@@ -10,8 +10,10 @@ import java.util.Collections;
 import java.util.List;
 
 /**
- * ES的配置，抄的spring-data-elasticsearch源码
- * @author sunbo
+ * ES的配置，抄的 spring-data-elasticsearch 源码
+ *
+ * @author Joshua Sun
+ * @since 1.0.0
  */
 @ConfigurationProperties(prefix = "elasticsearch.datasource")
 @Getter

@@ -13,7 +13,9 @@ import java.net.URISyntaxException;
 
 /**
  * ES数据源
- * @author sunbo
+ *
+ * @author Joshua Sun
+ * @since 1.0.0
  */
 @Getter
 public class ElasticsearchDatasource extends RestHighLevelClient {

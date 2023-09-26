@@ -18,7 +18,9 @@ import java.util.List;
 
 /**
  * 搜索条件
- * @author sunbo
+ *
+ * @author Joshua Sun
+ * @since 1.0.0
  */
 public abstract class ApiSearchRequest extends SearchRequest {
 

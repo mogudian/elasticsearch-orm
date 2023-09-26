@@ -18,7 +18,9 @@ import java.util.stream.IntStream;
 
 /**
  * 简单搜索条件
- * @author sunbo
+ *
+ * @author Joshua Sun
+ * @since 1.0.0
  */
 public class SimpleSearchRequest extends ApiSearchRequest {
 

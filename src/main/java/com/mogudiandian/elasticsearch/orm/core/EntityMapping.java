@@ -6,7 +6,9 @@ import java.util.Map;
 /**
  * ES实体映射
  * @param <E> 实体类型
- * @author sunbo
+ *
+ * @author Joshua Sun
+ * @since 1.0.0
  */
 public abstract class EntityMapping<E extends BaseEntity> {
 

@@ -7,7 +7,9 @@ import java.util.Date;
 
 /**
  * 生命周期范围
- * @author sunbo
+ *
+ * @author Joshua Sun
+ * @since 1.0.0
  */
 @Getter
 @Setter

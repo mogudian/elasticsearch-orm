@@ -8,7 +8,9 @@ import java.lang.reflect.Field;
 
 /**
  * 查询模板的属性
- * @author sunbo
+ *
+ * @author Joshua Sun
+ * @since 1.0.0
  */
 @Getter
 public class TemplateProperty extends ObjectProperty {
