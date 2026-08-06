@@ -177,7 +177,7 @@ SearchResult<UserEntity> searchResult = client.search(searchRequest);
 ```java
 // 复杂方式
 // 优点 可以进行非等值的查询(> < between like) 可以做复杂条件例如 a and b and (c or (d and e)) 支持嵌套查询 支持模糊搜索
-// 缺点 需要在字符串中写字段名(不好refactor)
+// 缺点 需要在字符串中写字段名(不好refactor，不过也可以使用 lombok.experimental.FieldNameConstants 来解决)
 
 ComplexSearchRequest searchRequest = new ComplexSearchRequest(UserEntity.class);
 searchRequest.setKeyword(keyword);
